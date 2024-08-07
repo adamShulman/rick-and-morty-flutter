@@ -1,4 +1,4 @@
-# rick and morty flutter - indieflow
+# Rick and morty flutter 
 
 Rick and morty flutter sample application. 
 

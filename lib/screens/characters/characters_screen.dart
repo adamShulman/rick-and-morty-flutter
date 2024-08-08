@@ -35,7 +35,9 @@ class _CharactersScreenState extends State<CharactersScreen> with SnackBarMessen
     return Scaffold(
       floatingActionButton: FloatingActionButton.small(
         onPressed: () {
-          GoRouter.of(context).push(AppConstants.routesPath.filter);
+          
+          GoRouter.of(context).go("${AppConstants.routesPath.characters}/${AppConstants.routesPath.filter}");
+          // GoRouter.of(context).push(AppConstants.routesPath.filter);
         },
         tooltip: 'Filter/Sort',
         child: const Icon(Icons.sort),
@@ -87,7 +89,7 @@ class _CharactersScreenState extends State<CharactersScreen> with SnackBarMessen
   }
 
   void _gotoDetailsPage(BuildContext context, ListItem listItem) {
-    GoRouter.of(context).push(widget.detailsPath, extra: listItem);
+    GoRouter.of(context).go(widget.detailsPath, extra: listItem);
   }
 
   IndieMessageWidget getMessageWidget(String title, String? subtitle, IconData image) {

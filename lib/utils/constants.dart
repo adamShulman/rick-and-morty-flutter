@@ -22,7 +22,7 @@ class RoutesPath {
 
   String get characterDetails => 'details';
 
-  String get filter => '/filter';
+  String get filter => 'filter';
   
 }
 
